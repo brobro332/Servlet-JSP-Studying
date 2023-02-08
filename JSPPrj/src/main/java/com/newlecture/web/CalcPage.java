@@ -22,10 +22,10 @@ public class CalcPage extends HttpServlet {
 			Cookie[] cookies = request.getCookies();
 			
 			if(cookies != null)
-			for(Cookie c : cookies)
-			if(c.getName().equals("exp")) {
-				exp = c.getValue();
-				break;
+				for(Cookie c : cookies)
+					if(c.getName().equals("exp")) {
+						exp = c.getValue();
+						break;
 			}
 		
 		
